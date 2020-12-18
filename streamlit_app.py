@@ -229,7 +229,7 @@ if chosenRadioButton == 'Fake|Fact':
         #
         if len(auth_key) < 12:
             st.warning("Token Seems Invalid|Null")
-        if  st.button('Scrape Article'):
+        if  st.button('Lets Check'):
             if authValueFlag == True:
                 if len(auth_key) < 12:
                     auth_key = ""
