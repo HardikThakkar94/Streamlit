@@ -375,7 +375,7 @@ if chosenRadioButton == 'Social Media':
                     'Authorization': 'Bearer ' + auth_key
                     }
                 else:
-                    response = requests.get(endPointHuzlers, headers=headers)
+                    response = requests.get(endPoint, headers=headers)
                     data_list = response.json()
                     if type(data_list) == dict:
                         st.error("Invalid Token | Not Authenticated")
