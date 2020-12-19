@@ -96,7 +96,7 @@ if chosenRadioButton == 'Sign Up|In':
             response = requests.get(f"https://gbqrkn96z7.execute-api.us-east-1.amazonaws.com/prod/sign_up?userid={username}&password={password}")#&current_user={token}")
             data_list = response.json()
             checker = str(data_list)
-            if checker == "Already Exists":
+            if checker == " Already Exists!!!":
                 st.error(f"Error this User : {data_list}")
                 st.info(f"Please try with a new user if you think is a error or get in touch with our Admin: HT")
             else:
